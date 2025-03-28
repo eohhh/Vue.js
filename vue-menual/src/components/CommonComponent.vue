@@ -25,7 +25,7 @@
     methods : {}, // Vue가 사용하는 모든 종류의 함수. Ajax 담당. (methods에 등록되지 않는 함수는 사용하지 못함. 기본함수들 조차도..)
     watch : { // 데이터 변경에 따른 추가 작업 정의 (감시자 역할)
       month() {  // watch는 기존에 있는 프로퍼티를 불러와야 한다.// //
-        if (this.month < 10 ) { 
+        if ((this.month.toString()).length == 1 && this.month < 10) { 
           this.month = '0' + this.month;
         }
       }
