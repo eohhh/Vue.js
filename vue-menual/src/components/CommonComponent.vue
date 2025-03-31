@@ -1,4 +1,5 @@
 <!-- CommonComponent.vue -->
+ <!-- 여러곳에서 공동으로 사용할때, 각기 다른 곳에서 몇번 사용해야 할 경우.-->
  <template>
   <!-- Component가 가지는 HTML-->
    <p>{{ year }}년 {{ month }}월 {{ day }}일</p>
