@@ -1,7 +1,7 @@
 <!-- PropsComponent.vue -->
 <template>
   <div>
-    <PageTitle title="First!"/>  <!--title이 두번 쓰임 , 서로 각각 다른 문자열.. -->
+    <PageTitle title="First!"/>  <!--title이 두번 쓰이면 , 서로 각각 다른 문자열.. -->
     <!-- <PageTitle title="Today is ..."/> -->
     <hr>
     <PageContent v-bind:title="header" 
@@ -23,7 +23,7 @@
   </div>
 </template>
 <script>
-import PageContent from './PageContent.vue';
+import PageContent from './PageContent.vue'; // 자식요소 불러옴옴
 import PageTitle from './PageTitle.vue';
 import RefComponent from './RefComponent.vue';
 

@@ -1,7 +1,7 @@
 <template>
   <div>
     <input type="text" v-model.lazy="selected">
-    <component v-bind:is="selected"></component>
+    <component v-bind:is="selected"></component> <!-- component에 selected는 PropsCom으로 정의 되어 있기 때문에 PropsCom이 디폴트 값. -->
   </div>
 </template>
 <script>
@@ -11,7 +11,7 @@ import TextModal from './views/TextModal.vue';
 export default {
   data() {
     return {
-      selected : 'PropsCom'
+      selected : 'PropsCom' // components에 초기값을 'PropsCom' 으로 설정.
     };
   },
   components: {  
