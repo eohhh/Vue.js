@@ -4,8 +4,10 @@
     <router-link to="/">Home</router-link> |
     <router-link to="/about">About</router-link> |
     <router-link to="/dataBinding">dataBind</router-link> |
-    <router-link :to= "{ name : 'listBind'}">ListBind</router-link> |<!-- :to => to 앞에 : 는 v-bind의 약어 -->
-    <router-link :to="{ name : 'ifBinding'}">IfBinding</router-link>
+    <router-link :to= "{ name : 'listBind'}">ListBind</router-link> | <!-- :to => to 앞에 : 는 v-bind의 약어 -->
+    <router-link :to="{ name : 'ifBinding'}">IfBinding</router-link> |
+    <router-link :to ="{ name : 'onEvent' }">Onevent</router-link> |
+    <router-link :to="{ name : 'computedWatch' }">ComputedWatch</router-link> |
     <!-- "{ name : 'listBind'}" => name으로 썼기 때문에 path가 아니라 name에 있는 listBind를 써야 한다.-->
   </nav>
   <router-view/>
