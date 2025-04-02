@@ -1,7 +1,7 @@
 <template>
   <div>
     <input type="text" v-model.lazy="selected">
-    <component v-bind:is="selected"></component> <!-- component에 selected는 PropsCom으로 정의 되어 있기 때문에 PropsCom이 디폴트 값. -->
+    <component v-bind:is="selected"></component> <!-- component에 selected는 PropsCom으로 정의 되어 있기 때문에 componet의 디폴트 값은 PropsCom. -->
   </div>
 </template>
 <script>
